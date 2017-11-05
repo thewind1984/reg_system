@@ -13,6 +13,9 @@
 		 * Main action of controller
 		 */
 		public function index(){
+			if (!$this->user->isUserLogged())
+				return $this->redirect('/');
+			
 			$filter = [
 				'from_date' => null,
 				'to_date' => null,
@@ -59,6 +62,9 @@
 		 * Edit user action
 		 */
 		public function user(){
+			if (!$this->user->isUserLogged())
+				return $this->redirect('/');
+			
 			$this->user->overloadDefaultSettings(['status' => null]);
 			
 			$userId = isset($this->input[0]) && is_numeric($this->input[0]) && intval($this->input[0]) ? intval($this->input[0]) : null;

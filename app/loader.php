@@ -9,7 +9,6 @@
 	$path = trim($path, '/');
 	$path = $path ? explode('/', $path) : null;
 	
-	//$controller = $path ? (sizeOf($path) > 1 ? array_slice($path, 0, -1) : $path) : array('index');
 	$controller = $path && sizeOf($path) ? [$path[0]] : ['index'];
 	$action = $path && sizeOf($path) > 1 ? $path[1] : 'index';
 	$input = $path && sizeOf($path) > 2 ? array_slice($path, 2) : [];
