@@ -1,0 +1,318 @@
+
+@import url('fonts.css');
+@import url('flex.css');
+@import url('framework.css');
+
+* {
+	box-sizing: border-box;
+	position: relative;
+	outline: none;
+	font-family: 'Open Sans';
+}
+
+body {
+	margin: 0;
+	font: 14px/17px;
+	font-weight: 400;
+	color: #000;
+	background: #fff;
+}
+
+.btn {
+	background:-moz-linear-gradient(0% 50% 0deg,rgba(121,18,20,1) 0%,rgba(122,18,20,1) 1.04%,rgba(185,31,44,1) 68.22%,rgba(210,36,53,1) 100%);
+	background:-webkit-linear-gradient(0deg,rgba(121,18,20,1) 0%,rgba(122,18,20,1) 1.04%,rgba(185,31,44,1) 68.22%,rgba(210,36,53,1) 100%);
+	background:-webkit-gradient(linear,0% 50%,100% 50%,color-stop(0,rgba(121,18,20,1)),color-stop(0.0104,rgba(122,18,20,1)),color-stop(0.6822,rgba(185,31,44,1)),color-stop(1,rgba(210,36,53,1)));
+	background:-o-linear-gradient(0deg,rgba(121,18,20,1) 0%,rgba(122,18,20,1) 1.04%,rgba(185,31,44,1) 68.22%,rgba(210,36,53,1) 100%);
+	background:-ms-linear-gradient(0deg,rgba(121,18,20,1) 0%,rgba(122,18,20,1) 1.04%,rgba(185,31,44,1) 68.22%,rgba(210,36,53,1) 100%);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#791214',endColorstr='#D22435',GradientType=0)";
+	background:linear-gradient(90deg,rgba(121,18,20,1) 0%,rgba(122,18,20,1) 1.04%,rgba(185,31,44,1) 68.22%,rgba(210,36,53,1) 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#791214',endColorstr='#D22435',GradientType=1);
+	border: 0;
+	color: #fff;
+	font-weight: 400;
+	display: inline-flex;
+	cursor: pointer;
+	text-decoration: none;
+	align-items: center;
+	justify-content: center;
+	padding: 3px 15px;
+	min-width: 120px;
+}
+
+form .btn {
+	font-weight: 700;
+}
+
+.wrapper {
+	width: 1200px;
+	max-width: 100%;
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	line-height: 120%;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: 700;
+}
+
+h1 span,
+h2 span {
+	font-weight: 300;
+}
+
+h3 {
+	font-size: 12px;
+	font-weight: 700;
+}
+
+header {
+	background: rgba(234, 234, 234, .85);
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 70px;
+	z-index: 1;
+}
+
+body.index header {
+	position: absolute;
+}
+
+body:not(.index) main {
+	padding: 30px 0;
+}
+
+header .wrapper {
+	height: 100%;
+}
+
+header .logo {
+	display: flex;
+	background: url(../images/logo.png) left center no-repeat;
+	background-size: auto 90%;
+	height: 50px;
+	padding-left: 135px;
+	text-decoration: none;
+	color: #000;
+}
+
+header span {
+	font-weight: 300;
+	font-size: 26px;
+	border-left: 1px solid #000;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+
+header span strong {
+	margin: 0 5px;
+}
+
+footer {
+	background: #1D1D1B;
+	padding-bottom: 30px;
+}
+
+footer .logos {
+	padding: 30px 10px 10px;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 15px;
+}
+
+footer .logos img {
+	width: auto;
+	max-width: 100%;
+}
+
+footer p {
+	color: #fff;
+	font-size: 11px;
+	line-height: 110%;
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+	height: 800px;
+	background: url(../images/background.jpg) center center no-repeat;
+	background-size: 100% 100%;
+	padding-top: 70px;
+}
+
+.main .wrapper {
+	height: 100%;
+}
+
+.main .wrapper > * {
+	width: 100%;
+}
+
+.main h1 {
+	color: #fff;
+}
+
+.main h1 span {
+	display: block;
+}
+
+form {
+	background: rgba(240, 240, 240, .9);
+	padding: 10px 10px 25px;
+	min-width: 300px;
+}
+
+form label {
+	display: block;
+	margin-top: 10px;
+}
+
+form label input,
+form label select {
+	display: block;
+	width: 100%;
+	background: #fff;
+	border: 1px solid #000;
+	padding: 2px 6px;
+	margin-top: 3px;
+}
+
+form label .field-error {
+	border-color: red;
+	color: red;
+	background: pink;
+}
+
+form .btn {
+	min-height: 40px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top: 25px;
+}
+
+ul,
+ul li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.accounts {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.accounts ul {
+	margin: 0 -10px;
+}
+.accounts ul li {
+	padding: 0 10px;
+	margin-bottom: 15px;
+}
+.accounts ul li p {
+	font-size: 12px;
+	line-height: 180%;
+}
+.accounts ul li img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+.accounts h2 {
+	margin-bottom: 20px;
+}
+.accounts a {
+	color: #B3B3B0;
+	text-decoration: none;
+}
+.accounts a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 630px) {
+	
+	header .logo span {
+		display: none;
+	}
+	
+	.main h1 {
+		display: none;
+	}
+	
+	.main .wrapper > * {
+		justify-content: center;
+	}
+	
+	.accounts ul li {
+		width: 100%;
+	}
+	
+	footer .wrapper {
+		padding: 0;
+	}
+	
+	footer .logos {
+		text-align: center;
+	}
+	
+	footer p {
+		margin: 0 15px;
+	}
+	
+}
+
+.account > div {
+	margin: 10px 0;
+}
+
+.notifications {
+	margin: 10px;
+}
+
+.notifications .alert {
+	border: 1px solid #ccc;
+	background: #f5f5f5;
+	padding: 10px;
+	color: #000;
+	margin-bottom: 5px;
+	border-radius: 4px;
+	font-size: 12px;
+}
+
+.notifications .alert-error {
+	background: pink;
+	color: #cc0000;
+	border-color: red;
+}
+
+.notifications .alert-success {
+	background: green;
+	color: #fff;
+	border-color: darkgreen;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table th,
+table td {
+	border: 1px solid #aaa;
+	padding: 3px 5px;
+}
+
+.pagination {
+	margin: 10px 0;
+}

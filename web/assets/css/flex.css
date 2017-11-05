@@ -1,0 +1,31 @@
+
+/* FLEX */
+*[class*="flex-"] {display: flex;}
+*[class*="flex-"].hidden {display: none;}
+.flex-inline {display: inline-flex;}
+.flex-inline.hidden {display: none;}
+.flex-row {flex-direction: row;}
+.flex-column {flex-direction: column;}
+.flex-full,
+.flex-column.flex-vfull {justify-content: space-between;}
+.flex-full-padding {justify-content: space-around;}
+.flex-center {justify-content: center;}
+.flex-vend {justify-content: flex-end;}
+.flex-vstart {justify-content: flex-start;}
+.flex-end,
+.flex-row.flex-vend {align-items: flex-end;}
+.flex-row.flex-vstart {align-items: flex-start;}
+.flex-vcenter {align-items: center;}
+.flex-wrap {flex-wrap: wrap;}
+
+*[class*="flex-items-"] {flex-wrap: wrap;}
+*[class*="flex-items-"] > * {vertical-align: top;}
+.flex-items-2 > * {width: 50%;}
+.flex-items-3 > * {width: 33.333333%;}
+.flex-items-4 > * {width: 25%;}
+.flex-items-5 > * {width: 20%;}
+.flex-items-6 > * {width: 16.6%;}
+.flex-items-7 > * {width: 14.25%;}
+.flex-items-8 > * {width: 12.5%;}
+.flex-items-9 > * {width: 11.1%;}
+.flex-items-10 > * {width: 10%;}
